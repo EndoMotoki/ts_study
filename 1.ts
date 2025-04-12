@@ -1,18 +1,17 @@
-function addOne(n: number) {
-    return n+1;
-}
+// 値としてのオブジェクト
+const mail1 = {
+    name: "通常はがき",
+    price: 85,
+};
 
-function concatOne(n: string): string {
-    return n + "One";
-}
+// 型エイリアスを使ったオブジェクトの型定義
+type MailType = {
+    name: string;
+    price: number;
+};
 
-const addOne = function (n: number) {
-    return n + 1;
-}
-
-const addOne1 = (n: number) => {
-    return n + 1;
-}
-
-// 関数本体が単体の場合はさらに省略できる
-const addOne2 = (n: number) => n + 1;
+// 型アノテーションされた変数を宣言してオブジェクトを代入
+const mail2: MailType = {
+    name: "定形郵便物",
+    price: 110,
+};
