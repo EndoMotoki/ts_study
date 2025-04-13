@@ -1,5 +1,5 @@
-const hydrogen = {
-    protons: 1,
-};
+let greeting: "hello" | "こんにちは" = "hello";
 
-const numberOfNeutrons = hydrogen?.neutrons;
+greeting = 'こんにちは';
+
+greeting = 'hola';
